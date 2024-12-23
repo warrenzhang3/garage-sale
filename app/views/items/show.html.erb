@@ -1,0 +1,5 @@
+<h2><%= @item.title %></h2>
+<p><%= @item.description %></p>
+<p>$<%= @item.price %></p>
+<p>Size: <%= @item.size %></p>
+<p>Owner: <%= "#{@item.user.first_name} #{@item.user.last_name}" %></p>
