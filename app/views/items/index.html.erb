@@ -1,0 +1,7 @@
+<ul>
+  <% @items.each do |item| %>
+    <h2><%= item.title %></h2>
+    <li>$<%= item.price %></li>
+    <li>Owner: <%= "#{item.user.first_name} #{item.user.last_name}" %></li>
+  <% end %>
+</ul>
